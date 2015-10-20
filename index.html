@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Docker1 by wangfakang</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Docker1</h1>
+        <p class="header">docker exec attach </p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/wangfakang/docker1/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/wangfakang/docker1/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/wangfakang/docker1">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/wangfakang">wangfakang</a></p>
+
+
+      </header>
+      <section>
+        <p><code>如何进入一个处于运行时的docker容器:</code>  </p>
+
+<h1>
+<a id="主要有三种方式--" class="anchor" href="#%E4%B8%BB%E8%A6%81%E6%9C%89%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F--" aria-hidden="true"><span class="octicon octicon-link"></span></a>主要有三种方式：  </h1>
+
+<ul>
+<li>
+<p>(1)使用docker命令attach   </p>
+
+<ul>
+<li>docker attach containerid<br>
+</li>
+</ul>
+</li>
+<li>
+<p>(2)使用docker命令exec   </p>
+
+<ul>
+<li>docker exec containerid<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="关于在我们执行dockerrun-后面一般都会加-it参数" class="anchor" href="#%E5%85%B3%E4%BA%8E%E5%9C%A8%E6%88%91%E4%BB%AC%E6%89%A7%E8%A1%8Cdockerrun-%E5%90%8E%E9%9D%A2%E4%B8%80%E8%88%AC%E9%83%BD%E4%BC%9A%E5%8A%A0-it%E5%8F%82%E6%95%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于在我们执行docker　run 后面一般都会加-it参数：</h3>
+
+<pre><code>-i:参数是不会分配终端的，就像但是可以执行命令并且看输出结果．   
+-t:参数是分配终端，但是看不到命令执行的输出结果．  
+所以一般都是这两个参数的结合．   
+</code></pre>
+
+<h3>
+<a id="注意" class="anchor" href="#%E6%B3%A8%E6%84%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>注意：</h3>
+
+<p>　　上面两种方式的区别是很大的，docker attact是到一个已经运行的容器的stdin，然后进行命令执行的动作，
+　　当执行exit的时候则该容器也会随之退出, 而使用docker exec是不会的，此时相当于又启了一个docker子进程．    </p>
+
+<ul>
+<li>(3)使用sshd或是第三方工具<br>
+使用shh则需要docker安装sshd服务．</li>
+</ul>
+
+<h1>
+<a id="欢迎一起交流学习-" class="anchor" href="#%E6%AC%A2%E8%BF%8E%E4%B8%80%E8%B5%B7%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0-" aria-hidden="true"><span class="octicon octicon-link"></span></a>欢迎一起交流学习 </h1>
+
+<p>在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流</p>
+
+<ul>
+<li>邮件(1031379296#qq.com, 把#换成@)</li>
+<li>QQ: 1031379296</li>
+<li>weibo: <a href="http://weibo.com/u/2786211992/home">@王发康</a>
+</li>
+</ul>
+
+<h1>
+<a id="thx" class="anchor" href="#thx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thx</h1>
+
+<ul>
+<li>chunshengsterATgmail.com</li>
+</ul>
+
+<h1>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h1>
+
+<ul>
+<li>Linux\nginx\golang\c\c++爱好者</li>
+<li>欢迎一起交流  一起学习# </li>
+<li>Others say good and Others good</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("docker exec attach ertry container");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
